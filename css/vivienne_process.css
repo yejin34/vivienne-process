@@ -1,0 +1,621 @@
+body{
+  background-color: #eee;
+}
+
+#header{
+  width: 100%;
+  height: 1800px;
+}
+#header .wrap{
+  width: 1580px;
+  margin: auto;
+}
+#header .text{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  border-bottom: 2px solid #333;
+  line-height: 98px;
+}
+#header .westwood{
+  text-align: center;
+}
+#header .logo{
+  position: absolute;
+  padding-top: 130px;
+  left: 50%;
+  transform: translate(-50%);
+}
+#header .box{
+  padding-top: 465px;
+}
+#header .box img{
+  margin-left: 24px;
+}
+#header .imac{
+  position: relative;
+  top: -63px; left: 244px;
+  z-index: 10;
+}
+#header .imac::after{
+  content: "";
+  position: absolute;
+  top: 28px; left: 24px;
+  width: 571px;
+  height: 321px;
+  background: url(../img/main1920.png) center top no-repeat;
+  background-size: cover;
+  transition: 4s;
+}
+#header .imac:hover::after{
+  transition: 4s linear;
+  background-position: center bottom;
+}
+#header .macbook{
+  position: relative;
+  top: -402px; left: 646px;
+  z-index: 11;
+}
+#header .macbook::after{
+  content: "";
+  position: absolute;
+  top: 21px; left: 65px;
+  width: 455px;
+  height: 285px;
+  background: url(../img/main1280.png) center top no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  transition: 4s;
+  z-index: 15;
+}
+#header .macbook:hover::after{
+  transition: 4s linear;
+  background-position: center bottom;
+}
+#header .iphon{
+  position: relative;
+  top: -716px; left: 1192px;
+  z-index: 999;
+}
+#header .iphon::after{
+  content: "";
+  position: absolute;
+  top: 7px; left: 9px;
+  width: 136px;
+  height: 296px;
+  background: url(../img/main390.png) center top no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+  transition: 6s;
+}
+#header .iphon:hover::after{
+  transition: 6s linear;
+  background-position: center bottom;
+}
+
+#overview{
+  width: 100%;
+  height: 400px;
+  background-color: #333;
+  color: #f1f1f1;
+  position: relative;
+  margin-bottom: 220px;
+}
+#overview .wrap{
+  width: 1362px;
+  margin: auto;
+}
+#overview h1{
+  font-size: 34px;
+  padding: 45px 0;
+}
+#overview .textBox p{
+  font-size: 20px;
+  line-height: 34px;
+}
+#overview .box{
+  position: absolute;
+  top: 110px;
+  width: 180px;
+  height: 180px;
+  border: 2px solid #f1f1f1;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 78px;
+  font-size: 18px;
+}
+#overview .box1{
+  right: 402px;
+}
+#overview .box2{
+  right: 254px;
+}
+#overview .box3{
+  right: 105px;
+}
+
+#keywords{
+  width: 100%;
+  height: 100%;
+  margin-bottom: 220px;
+}
+#keywords .wrap{
+  width: 1362px;
+  margin: auto;
+}
+#keywords .title h1{
+  font-size: 34px;
+}
+#keywords .title p{
+  font-size: 20px;
+  padding: 36px 0 90px;
+}
+#keywords .contents{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#keywords .box{
+  margin-top: 30px;
+}
+#keywords .box img{
+  margin-right: 36px;
+}
+#keywords .box2{
+  margin-bottom: 30px;
+}
+#keywords .box2 img{
+  margin-right: 17px;
+}
+#keywords .textBox img{
+  display: block;
+  padding: 33px 0 54px;
+}
+#keywords .textBox .txt{
+  display: flex;
+  font-size: 20px;
+}
+#keywords .textBox .txt p{
+  margin-right: 48px;
+}
+
+#asis_tobe{
+  width: 100%;
+  height: 650px;
+  background-color: #333;
+  color: #f1f1f1;
+  margin-bottom: 220px;
+}
+#asis_tobe .wrap{
+  width: 1362px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+#asis_tobe .group{
+  text-align: center;
+}
+#asis_tobe .group h1{
+  font-size: 34px;
+  padding: 158px 0 110px;
+}
+#asis_tobe .group p{
+  font-size: 20px;
+  margin-bottom: 80px;
+}
+
+#system{
+  width: 100%;
+  height: 100%;
+}
+#system .wrap{
+  width: 1314px;
+  margin: auto;
+}
+#system .title{
+  font-size: 30px;
+  margin-bottom: 80px;
+}
+#system .contents,
+#system .contents2{
+  display: flex;
+  margin-bottom: 220px;
+}
+#system .contents .box{
+  margin: 0 180px 0 135px;
+}
+#system .contents .border{
+  width: 425px;
+  height: 2px;
+  background-color: #333;
+  margin: 26px 0 56px;
+}
+#system .contents .box .colorBox{
+  display: flex;
+}
+#system .contents .box .colorBox .gray{
+  width: 199px;
+  height: 49px;
+  border: 1px solid #ccc;
+  background-color: #f3f3f3;
+}
+#system .contents .box .colorBox .black{
+  width: 200px;
+  height: 50px;
+  background-color: #333;
+}
+#system .contents .box .colorBox .red{
+  width: 200px;
+  height: 50px;
+  background-color: #d91c1c;
+}
+#system .contents .box .colorBox .color{
+  margin-right: 22px;
+}
+#system .contents .box .colorBox .color p{
+  font-size: 18px;
+  margin-top: 18px;
+  text-align: center;
+}
+#system .box h3{
+  font-size: 24px;
+  font-weight: normal;
+}
+#system .contents2{
+  padding-left: 135px;
+}
+#system h2{
+  font-size: 48px;
+  font-weight: normal;
+}
+#system .contents2 .border{
+  width: 530px;
+  height: 2px;
+  background-color: #333;
+  margin: 36px 0 28px;
+}
+#system .contents2 .fontBox{
+  margin-right: 145px;
+}
+#system .contents2 .fontBox p{
+  font-size: 18px;
+  line-height: 34px;
+}
+#system .contents2 .font_size{
+  margin-right: 218px;
+  font-size: 48px;
+  padding-top: 56px;
+}
+#system .contents2 .font{
+  font-size: 26px;
+  padding-top: 10px;
+}
+#system .contents2 .font p{
+  margin-bottom: 28px;
+}
+#system .font_f{
+  font-family: "Times New Roman";
+}
+
+#mainpage{
+  width: 100%;
+  height: 5000px;
+}
+#mainpage .wrap{
+  width: 1580px;
+  margin: auto;
+}
+#mainpage .title h1{
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+#mainpage .title p{
+  font-size: 20px;
+  line-height: 36px;
+  margin-bottom: 80px;
+}
+#mainpage .bg{
+  width: 100%;
+  height: 1113px;
+  background: url(../img/mainbg.png) center/cover;
+  padding-top: 390px;
+}
+#mainpage .contents{
+  display: flex;
+  margin-left: 70px;
+}
+#mainpage .contents > .page2{
+  margin-top: 230px;
+}
+#mainpage .contents img{
+  margin-right: 80px;
+}
+
+#mocup{
+  width: 100%;
+  height: 100%;
+  margin-bottom: 200px;
+}
+#mocup .wrap{
+  width: 1580px;
+  margin: auto;
+}
+#mocup .yourself{
+  text-align: center;
+  margin-bottom: 24px;
+}
+#mocup .contents{
+  width: 100%;
+  display: flex;
+}
+#mocup .macbook{
+  width: 778px;
+  height: 580px;
+  background-color: #fff;
+  padding: 109px 0 0 74px;
+  margin: 0 24px 24px 0;
+}
+#mocup .mac_mocup{
+  width: 778px;
+  height: 975px;
+  background-color: #d91c1c;
+  padding: 85px 0 0 135px;
+  margin-bottom: 35px;
+  margin-left: 24px;
+}
+#mocup .mac_mocup > .ipad{
+  position: relative;
+}
+#mocup .mac_mocup > .ipad::after{
+  content: "";
+  position: absolute;
+  top: 21px; left: 20px;
+  width: 315px;
+  height: 450px;
+  background: url(../img/main768.png) center top no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  z-index: 15;
+  transition: 4s;
+}
+#mocup .mac_mocup .ipad:hover::after{
+  transition: 4s linear;
+  background-position: center bottom;
+}
+#mocup .mac_mocup .iphon{
+  position: relative;
+  bottom: 20px; left: 340px;
+}
+#mocup .imgGroup{
+  width: 777px;
+}
+
+#products{
+  width: 100%;
+  height: 4630px;
+}
+#products .wrap{
+  width: 1580px;
+  margin: auto;
+}
+#products .title h1{
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+#products .title p{
+  font-size: 20px;
+  line-height: 36px;
+  margin-bottom: 80px;
+}
+#products .bg{
+  width: 100%;
+  height: 2681px;
+  background: url(../img/productsbg.png) center/cover;
+  padding-top: 390px;
+}
+#products .contents{
+  display: flex;
+  margin-left: 70px;
+}
+#products .contents > .page1{
+  margin: 230px 80px 0 0;
+}
+#products .mocup-products{
+  width: 987px;
+  height: 502px;
+  background-color: #fff;
+  display: flex;
+  margin: 50px 0 0 40px;
+  position: relative;
+}
+#products .mocup-products > .macbook{
+  padding: 86px 73px 0 40px;
+}
+#products .mocup-products > .macbook::after{
+  content: "";
+  position: absolute;
+  top: 106px; left: 101px;
+  width:418px;
+  height: 261px;
+  background: url(../img/products1280.png) center top no-repeat;
+  background-size: cover;
+  transition: 4s;
+  z-index: 20;
+}
+#products .mocup-products > .macbook:hover::after{
+  transition: 4s linear;
+  background-position: center bottom;
+}
+#products .mocup-products > .ipad{
+  padding-top: 66px;
+}
+#products .mocup-products > .ipad::after{
+  content: "";
+  position: absolute;
+  top: 82px; right: 97px;
+  width: 223px;
+  height: 321px;
+  background: url(../img/products768.png) center top no-repeat;
+  background-size: cover;
+  transition: 4s;
+  border-radius: 8px;
+  z-index: 20;
+}
+#products .mocup-products > .ipad:hover::after{
+  transition: 4s linear;
+  background-position: center bottom;
+}
+#products .mocup-products > .illu{
+  position: absolute;
+}
+#products .mocup-products > .illu1{
+  top: 5px; left: 495px;
+}
+#products .mocup-products > .illu2{
+  bottom: 8px; left: 120px;
+}
+#products .mocup-products > .illu3{
+  bottom: 8px; right: 217px;
+}
+
+#lookbook{
+  width: 100%;
+  height: 3710px;
+  margin-bottom: 230px;
+}
+#lookbook .banner{
+  width: 100%;
+}
+#lookbook .banner img{
+  width: 100%;
+  display: block;
+}
+#lookbook .wrap{
+  width: 1580px;
+  margin: auto;
+}
+#lookbook .title h1{
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+#lookbook .title p{
+  font-size: 20px;
+  line-height: 36px;
+  margin-bottom: 80px;
+}
+#lookbook .imgGroup{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+#lookbook .mocup{
+  position: relative;
+  margin-bottom: 230px;
+}
+#lookbook .mocup .macbook{
+  position: absolute;
+  top: -150px; right: 470px;
+}
+#lookbook .mocup .iphon1{
+  position: absolute;
+  top: -120px; right: 268px;
+}
+#lookbook .mocup .iphon2{
+  position: absolute;
+  top: -120px; right: 27px;
+}
+
+#about{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#about .wrap{
+  width: 1580px;
+  margin: auto;
+  position: relative;
+}
+#about .title h1{
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+#about .title p{
+  font-size: 20px;
+  line-height: 36px;
+  margin-bottom: 80px;
+}
+#about .imgGroup{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#about .imgGroup .about2{
+  padding-top: 25px;
+}
+#about .macbook{
+  position: absolute;
+  top: 115px; right: 110px;
+}
+#about .iphon1{
+  position: absolute;
+  left: 0; bottom: 120px;
+}
+#about .iphon2{
+  position: absolute;
+  left: 230px; bottom: -56px;
+}
+#about .iphon3{
+  position: absolute;
+  right: 620px; bottom: -56px;
+}
+
+#bridal{
+  width: 100%;
+  height: 4080px;
+  position: relative;
+  margin: 250px 0 200px;
+}
+#bridal .wrap{
+  width: 1580px;
+  margin: auto;
+}
+#bridal .title h1{
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+#bridal .title p{
+  font-size: 20px;
+  line-height: 36px;
+  margin-bottom: 80px;
+}
+#bridal .couture{
+  position: absolute;
+}
+#bridal .bg{
+  width: 100%;
+  height: 2400px;
+  background: url(../img/bridalbg.png) center/cover;
+  margin-top: 250px;
+}
+#bridal .bridalpage{
+  text-align: center;
+  padding-top: 970px;
+}
+#bridal .mocup .iphon1{
+  position: absolute;
+  top: 2170px; right: 324px;
+}
+#bridal .mocup .iphon2{
+  position: absolute;
+  bottom: 830px; left: 308px;
+}
+#bridal .mocup .macbook{
+  position: absolute;
+  bottom: 8px; right: 115px;
+}
+
+footer img{
+  display: block;
+}
